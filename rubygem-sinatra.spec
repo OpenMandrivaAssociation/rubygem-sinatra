@@ -42,4 +42,4 @@ Documents, RDoc & RI documentation for %{name}.
 %files doc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README*
