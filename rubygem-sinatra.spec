@@ -32,14 +32,23 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_build
 
 %install
+rm -rf %{buildroot}
 %gem_install
 
-%files
-%{ruby_gemdir}/gems/%{rbname}-%{version}/
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%clean
+rm -rf %{buildroot}
 
+%files
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/sinatra/images
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/sinatra
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/sinatra/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/sinatra/images/*.png
+%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README*
+%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
