@@ -5,7 +5,7 @@ Summary:	Classy web-development dressed in a DSL
 Name:		rubygem-%{rbname}
 
 Version:	1.2.6
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://sinatra.rubyforge.org
