@@ -4,8 +4,8 @@
 Summary:	Classy web-development dressed in a DSL
 Name:		rubygem-%{rbname}
 
-Version:	1.2.6
-Release:	2
+Version:	1.3.2
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://sinatra.rubyforge.org
@@ -32,11 +32,7 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_build
 
 %install
-rm -rf %{buildroot}
 %gem_install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
