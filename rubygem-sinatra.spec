@@ -48,3 +48,21 @@ Documents, RDoc & RI documentation for %{name}.
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+
+
+%changelog
+* Sun Mar 18 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.3.2-1
++ Revision: 785481
+- version update 1.3.2
+
+* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.2.6-2
++ Revision: 774161
+- mass rebuild of ruby packages against ruby 1.9.1
+
+* Mon Jan 23 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.2.6-1
++ Revision: 766983
+- new files section
+- packaging error agai
+- both packaged fixed
+- imported package rubygem-sinatra
+
